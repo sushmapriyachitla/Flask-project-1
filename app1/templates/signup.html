@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'signup.css') }}">
+    
+    <title>signup page</title>
+</head>
+<body>
+    <div class='card'>
+    <h1 class="sus">Signup page</h1>
+    <form action="{{ url_for('signup')}}" method ="post">                    
+        <input type='text' name='username' placeholder='enter your name'><br><br>
+        <input type='password' name='password' placeholder='enter password'><br><br>
+        <input type='number' name='phonenumber' placeholder='enter your phonenumber'><br><br>
+        <input type='email' name='email' placeholder='enter your email'><br><br>
+       
+        <button>submit</button>
+    </form>
+</div>
+</body>
+</html>
+
+

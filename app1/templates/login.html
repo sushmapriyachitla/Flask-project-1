@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>LogIn page</title>
+</head>
+<body>
+    <h1>login</h1>
+    <form action="{{ url_for('login')}}" method ="post">                    
+        <input type='email' name='email' placeholder='enter your email'><br><br>
+        <input type='password' name='password' placeholder='enter password'><br><br>
+        <a href="/verify">   forgot password </a>
+
+        <button>submit</button>
+    </form>
+    
+</body>
+</html>
