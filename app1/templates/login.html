@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'signup.css') }}">
     
     <title>LogIn page</title>
 </head>
 <body>
-    <h1>login</h1>
+    <div class='card'>
+    <h1 class="sus">login page</h1>
+  
     <form action="{{ url_for('login')}}" method ="post">                    
         <input type='email' name='email' placeholder='enter your email'><br><br>
         <input type='password' name='password' placeholder='enter password'><br><br>
